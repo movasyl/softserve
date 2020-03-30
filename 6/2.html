@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img class="image" src="https://r.mtdata.ru/r300x300/u17/photo34B1/20152008649-0/original.jpeg">
+    <script>
+        const img = document.querySelector('img.image');
+        function chage() {
+            let url = prompt('enter new img link');
+            // img.setAttribute('src', 'https://www.meme-arsenal.com/memes/50a9b26ca3fcfa6da080d02536f2644c.jpg');
+            img.setAttribute('src', url);
+        }
+        setTimeout(chage, 3000);
+    </script>
+</body>
+
+</html>
